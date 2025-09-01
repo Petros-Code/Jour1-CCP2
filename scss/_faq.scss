@@ -1,3 +1,74 @@
-faq {
-    background-color: red;
+.faq {
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+
+
+
+
+}
+
+.faq_title {
+    padding-left: 150px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: hsla(356, 68%, 91%, 1);
+
+    background: linear-gradient(90deg, hsla(356, 68%, 91%, 1) 0%, hsla(140, 60%, 82%, 1) 50%, hsla(316, 66%, 80%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(356, 68%, 91%, 1) 0%, hsla(140, 60%, 82%, 1) 50%, hsla(316, 66%, 80%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(356, 68%, 91%, 1) 0%, hsla(140, 60%, 82%, 1) 50%, hsla(316, 66%, 80%, 1) 100%);
+    background-repeat: repeat-x;
+    animation: color 12s ease-in-out infinite;
+
+    font-weight: bold;
+
+    @keyframes slide {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    @include media-max("phone-down") {
+        flex-direction: column;
+        text-align: center;
+        padding-left: 30px;
+        padding-right: 30px;
+
+    }
+
+}
+
+.caret-down {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+.faq_answer-bloc {
+    overflow: hidden;
+    height: 0;
+    transition: height 0.3s ease;
+}
+
+.faq_answer {
+    padding: 25px;
+}
+
+.faq_bloc.active .caret-down {
+    transform: rotate(180deg);
 }
