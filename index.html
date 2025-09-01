@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="scss/main.css">
     <script src="avis.js"></script>
     <script src="faq.js"></script>
-    <script src="prix.js"></script>
+    <script defer src="prix.js"></script>
     <script src="contact.js"></script>
     <title>Aphone</title>
 </head>
@@ -14,6 +14,64 @@
     <header>
         <p>Hello World</p>
     </header>
+
+<section class="simulateur-prix">
+    <h2>Configurez votre Aphone de la mort qui tue!!!</h2>
+    <div class="conteneur-simulateur">
+      
+        <div class="groupe-option">
+            <h3>Couleur</h3>
+            <div class="options-couleur">
+                <button class="option-couleur active" data-couleur="noir" data-prix="0" role="radio" aria-label="noir" tabindex="0"></button>
+                <button class="option-couleur" data-couleur="blanc" data-prix="10" role="radio" aria-label="blanc" tabindex="0"></button>
+                <button class="option-couleur" data-couleur="bleu" data-prix="20" role="radio" aria-label="bleu" tabindex="0"></button>
+                <button class="option-couleur" data-couleur="rouge" data-prix="30" role="radio" aria-label="rouge" tabindex="0"></button>
+                <button class="option-couleur" data-couleur="arc-en-ciel" data-prix="80"role="radio"  aria-label="arc-en-ciel" tabindex="0"></button>
+                
+            </div>
+        </div>
+
+        <div class="groupe-option">
+            <h3>Version</h3>
+            <select id="selection-version">
+                <option value="base" selected>Version de base (64Go) (800€)</option>
+                <option value="pigeon">Version pigeon (4Go) (870€)</option>
+                <option value="pro">Version Pro (128Go) (900€)</option>
+                <option value="premium">Version Premium (256Go) (1 000€)</option>
+                <option value="prestige">Version Ultime (2To) (8 002€)</option>
+            </select>
+        </div>
+
+        <div class="groupe-option">
+            <h3>Options</h3>
+            <div class="options-case">
+                <label>
+                    <input type="checkbox" data-option="garantie" data-prix="49" tabindex="0">
+                    Garantie étendue (+49€)
+                </label>
+                <label>
+                    <input type="checkbox" data-option="accessoires" data-prix="29" tabindex="0">
+                    Pack accessoires (+29€)
+                </label>
+                <label>
+                    <input type="checkbox" data-option="livraison" data-prix="9" tabindex="0">
+                    Livraison express (+9€)
+                </label>
+                <label>
+                    <input type="checkbox" data-option="ultime" data-prix="900" tabindex="0">
+                    Pack pigeon ultime (+900€)
+                </label>
+            </div>
+        </div>
+        <div class="affichage-commande">
+            <p>Descriptif de votre commande : <span id="commande"></span></p>
+        </div>
+        <div class="affichage-prix">
+            <p>Prix total : <span id="prix-total">0</span>€</p>
+        </div>
+    </div>
+</section>
+
         
 </body>
 </html>
