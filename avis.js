@@ -9,6 +9,7 @@ const avisData = [
 
 const carousel = document.getElementById("carousel");
 const template = document.getElementById("avis-template");
+const addAvis= document.getElementById("ajouter-avis");
 
 function ajouterAvis(avis) {
     const clone = template.content.cloneNode(true);
@@ -55,7 +56,7 @@ form.addEventListener("submit", (e) => {
 
     
     slides = carousel.querySelectorAll(".avis");
-
+    updateCarousel();
     
     form.reset();
 });
