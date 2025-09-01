@@ -1,25 +1,14 @@
-//Variables
-//Font
-.poppins-regular {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
+// _variables.scss
+// Couleurs
+$primary-color: #333333;   // texte
+$secondary-color: #f5f5f5; // background
+$tertiary-color: #ff914d;  // logo & icons
 
-.montserrat-regular {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;    
-    font-style: normal;
-}
-
-//Mode : clair
-/* texte */
-$primary-color: #333333; 
-/* background */
-$secondary-color: #f5f5f5; 
-/* logo+icons */
-$tertiary-color: #ff914d; 
+// Tailles de police
 $primary-font-size: 32px;
 $secondary-font-size: 24px;
 $tertiary-font-size: 16px;
+
+// Familles de polices
+$font-poppins: "Poppins", sans-serif;
+$font-montserrat: "Montserrat", sans-serif;
