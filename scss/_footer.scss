@@ -1,0 +1,80 @@
+footer {
+    background-color: $primary-color;
+    color: $secondary-color;
+    padding: 2rem;
+  
+    .footer-content-up {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+  
+      p {
+        color: $secondary-color;
+        font-family: $font-montserrat;
+        font-size: $secondary-font-size;
+        margin: 0;
+      }
+      
+      @include respond-to(tablet) {
+        align-items: center;
+  
+        p {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  
+    .footer-content-down {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 1rem;
+  
+      .footer-member {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin: 0.5rem 1rem;
+  
+        p {
+          color: $secondary-color;
+          font-family: $font-poppins;
+          font-size: $tertiary-font-size;
+          margin: 0;
+        }
+  
+        a {
+          color: $tertiary-color;
+          text-decoration: none;
+  
+          &:hover .fa-github {
+            animation: spin 1s linear infinite;
+          }
+        }
+      }
+  
+      @include respond-to(tablet) {
+        flex-direction: column;
+        align-items: flex-start;
+  
+        .footer-member {
+          width: 100%;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  
+  // Keyframes global pour le spinner
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
