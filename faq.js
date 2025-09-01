@@ -24,7 +24,7 @@ faqs.forEach((faq) => {
     const answer = document.createElement("div");
     answer.classList.add("faq-answer");
     answer.innerText = faq.answer;
-
+    // modif ici
     question.addEventListener("click", () => {
         const isOpen = answer.classList.contains("open");
         document.querySelectorAll(".faq-answer").forEach(a => a.classList.remove("open"));
