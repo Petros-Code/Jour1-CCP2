@@ -18,6 +18,12 @@ header {
   background-color: #ff914d;
 }
 
+.container {
+  display: flex;
+  background-color: grey;
+  border-radius: 12px;
+}
+
 .carousel {
   width: 300px;
   height: 200px;
@@ -41,7 +47,7 @@ header {
 .carte-texte {
   display: flex;
   justify-content: center;
-  background-color: grey;
+  background-color: beige;
   color: black;
   font-size: 14px;
 }
