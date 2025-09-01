@@ -64,6 +64,14 @@ footer .footer-content-up {
 }
 footer .footer-content-up p {
   color: #f5f5f5;
+@charset "UTF-8";
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-regular {
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
   margin: 0;
@@ -182,4 +190,116 @@ footer .footer-content-down .footer-member a:hover .fa-github {
 
 .faq_bloc.active .caret-down {
   transform: rotate(180deg);
+/* texte */
+/* background */
+/* logo+icons */
+header {
+  background-color: #ff914d;
+}
+
+faq {
+  background-color: red;
+}
+
+.simulateur-prix {
+  padding: 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+.simulateur-prix .conteneur-simulateur {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.simulateur-prix .groupe-option {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.simulateur-prix .groupe-option h3 {
+  margin-top: 0;
+  color: #333333;
+  font-size: 16px;
+  font-weight: 400;
+}
+.simulateur-prix .options-couleur {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  position: relative;
+}
+.simulateur-prix .options-couleur .option-couleur {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+.simulateur-prix .options-couleur .option-couleur::after {
+  content: attr(data-couleur) " (+" attr(data-prix) "€)";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  white-space: nowrap;
+  margin-top: 5px;
+}
+.simulateur-prix .options-couleur .option-couleur:hover::after {
+  opacity: 1;
+}
+.simulateur-prix .options-couleur [data-couleur=noir] {
+  background-color: #000;
+}
+.simulateur-prix .options-couleur [data-couleur=blanc] {
+  background-color: #fff;
+  border: 1px solid #000;
+}
+.simulateur-prix .options-couleur [data-couleur=bleu] {
+  background-color: #007bff;
+}
+.simulateur-prix .options-couleur [data-couleur=rouge] {
+  background-color: #dc3545;
+}
+.simulateur-prix .options-couleur [data-couleur=arc-en-ciel] {
+  background: linear-gradient(90deg, rgb(131, 58, 180) 0%, rgb(253, 29, 29) 50%, rgb(252, 176, 69) 100%);
+}
+.simulateur-prix select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 250px;
+  margin: 10px auto;
+  font-size: 16px;
+}
+.simulateur-prix .options-case {
+  text-align: left;
+}
+.simulateur-prix .options-case label {
+  display: block;
+  margin: 5px 0;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333333;
+}
+.simulateur-prix .affichage-prix {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 15px;
+  color: #333333;
+}
+.simulateur-prix .affichage-prix #prix-total {
+  color: #ff914d;
+  font-size: 32px;
+  font-weight: 400;
 }/*# sourceMappingURL=main.css.map */
