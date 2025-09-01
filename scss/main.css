@@ -6,6 +6,7 @@ footer {
   background-color: #333333;
   color: #f5f5f5;
   padding: 2rem;
+  border-radius: 15px;
 }
 footer .footer-content-up {
   display: flex;
