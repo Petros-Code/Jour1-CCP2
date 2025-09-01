@@ -24,10 +24,16 @@ faqs.forEach((faq) => {
     const answer = document.createElement("div");
     answer.classList.add("faq-answer");
     answer.innerText = faq.answer;
-
+    // modif ici
     question.addEventListener("click", () => {
-        answer.classList.toggle("open");
-        question.querySelector(".faq-icon").classList.toggle("open");
+        const isOpen = answer.classList.contains("open");
+        document.querySelectorAll(".faq-answer").forEach(a => a.classList.remove("open"));
+        document.querySelectorAll(".faq-icon").forEach(icon => icon.classList.remove("open"));
+
+        if (!isOpen) {
+            answer.classList.add("open");
+            question.querySelector(".faq-icon").classList.add("open");
+        }
     });
 
     item.appendChild(question);
