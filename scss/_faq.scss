@@ -10,21 +10,15 @@
 }
 
 .faq_title {
-    padding-left: 150px;
+    // padding-left: 150px;
     padding-right: 30px;
     padding-top: 5px;
     padding-bottom: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: hsla(356, 68%, 91%, 1);
-
-    background: linear-gradient(90deg, hsla(356, 68%, 91%, 1) 0%, hsla(140, 60%, 82%, 1) 50%, hsla(316, 66%, 80%, 1) 100%);
-
-    background: -moz-linear-gradient(90deg, hsla(356, 68%, 91%, 1) 0%, hsla(140, 60%, 82%, 1) 50%, hsla(316, 66%, 80%, 1) 100%);
-
-    background: -webkit-linear-gradient(90deg, hsla(356, 68%, 91%, 1) 0%, hsla(140, 60%, 82%, 1) 50%, hsla(316, 66%, 80%, 1) 100%);
-    background-repeat: repeat-x;
+    font-family: $font-poppins;
+    background: $tertiary-color;
     animation: slide 12s ease-in-out infinite;
 
     font-weight: bold;
@@ -60,12 +54,14 @@
 }
 
 .faq_answer-bloc {
+    background-color: $primary-color;
     overflow: hidden;
     height: 0;
     transition: height 0.3s ease;
 }
 
 .faq_answer {
+    color: $secondary-color;
     padding: 25px;
 }
 
